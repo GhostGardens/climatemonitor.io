@@ -1,0 +1,13 @@
+[Unit]
+Description=Sensor API
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python3 /home/pi/sensor/api.py
+WorkingDirectory=/home/pi/sensor/
+StandardOutput=inherit
+StandardError=inherit
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
