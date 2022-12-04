@@ -43,8 +43,8 @@ def create_items(client,bigqueryDatasetLocation,sensorDataset):
 
 def run_sensor():
 
-    os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = '/home/pi/bqkey.json'
-    bigqueryDatasetLocation = "climatemonitor-io-314313"
+    os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = '/home/pi/bqkey.json'    # make sure your auth token for bigquery is in this file!
+    bigqueryDatasetLocation = "{bigquery dataset location}"
     sensorDataset = "climate"
 	
     client = bigquery.Client()
