@@ -13,4 +13,4 @@ my_ip = get_ip_address()
 
 client = Client(account_sid, auth_token)
 
-message = client.messages.create( to="+17072666211", from_="+13345092632", body="Good morning!  My name is {} and I live at {}".format(my_name, my_ip))
+message = client.messages.create( to="{receiver number}", from_="{twilio sender number}", body="Good morning!  My name is {} and I live at {}".format(my_name, my_ip))
